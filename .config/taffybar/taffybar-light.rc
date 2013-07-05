@@ -1,0 +1,13 @@
+style "default" {
+  bg[NORMAL] = "#fcfcfc"
+  fg[NORMAL] = "#101010"
+  text[NORMAL] = "#101010"
+}
+
+style "notification-button" = "default" {
+  text[NORMAL] = "#FF0000"
+  fg[NORMAL] = "#FF0000"
+}
+
+widget "Taffybar*" style "default"
+widget "*NotificationCloseButton" style "notification-button"

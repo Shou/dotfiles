@@ -1,0 +1,2 @@
+#!/bin/zsh
+(while true; do date +'%a %b %d %H:%M:%S'; sleep 1; done) | dzen2 -x '840' -w '240' -h '16' -fg '#101010' -bg '#fcfcfc' -ta 'c' -p

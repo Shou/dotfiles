@@ -87,6 +87,8 @@ alias fuck="sudo"
 alias FUCK="sudo"
 alias fucking="sudo"
 alias FUCKING="sudo"
+alias goodnight="shutdown -h now"
+alias v="vim"
 
 # Use modern completion system
 autoload -Uz compinit

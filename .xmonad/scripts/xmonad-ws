@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+ws=$(wmctrl -d | grep '*' | sed 's_\([0-9]\+\).*_\1_')
+if [ $1 = 'next' ]; then
+    next=$(expr $ws + 1);
+elif [ $1 = 'prev' ]; then
+    next=$(expr $ws - 1);
+fi
+
+wmctrl -s $next;

@@ -1,0 +1,1 @@
+kill $(ps aux | grep taffybar-linux | head -n 1 | sed 's_^[a-zA-Z ]\+\([0-9]\+\).\+_\1_')

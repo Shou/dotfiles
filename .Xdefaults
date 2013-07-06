@@ -20,7 +20,7 @@ URxvt*font:         xft:terminus:pixelsize=8:antialias=false,xft:Droid Sans Mono
 
 URxvt.keysym.M-u:       perl:mark-yank-urls:activate_mark_mode
 URxvt.underlineURLs:    true
-URxvt.perl-lib:         /home/hatate/.urxvt/
+URxvt.perl-lib:         /home/shou/.urxvt/
 URxvt.perl-ext:         selection,mark-yank-urls
 URxvt.perl-ext-common:  default,matcher
 URxvt.urlLauncher:      /usr/bin/x-www-browser
@@ -61,11 +61,11 @@ URxvt.urlLauncher:      /usr/bin/x-www-browser
 *color2:        #66aa11
 *color10:       #80ff00
 ! yellow
-*color3:        #ffa500
+*color3:        #c47f2c
 *color11:       #ffba68
 ! blue
-*color4:        #0066ff
-*color12:       #3399ff
+*color4:        #e78584
+*color12:       #ffc5a7
 ! magenta
 *color5:        #7e40a5
 *color13:       #bb88dd

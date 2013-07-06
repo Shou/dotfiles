@@ -109,3 +109,8 @@ let g:rbpt_colorpairs = [
     \ ["darkcyan", "darkcyan"],
     \ ]
 
+" Powerline
+
+let g:Powerline_symbols = 'fancy'
+
+

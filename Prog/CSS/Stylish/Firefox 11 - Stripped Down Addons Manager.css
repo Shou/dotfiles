@@ -1,0 +1,100 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+@-moz-document url("about:addons") {
+
+#view-port-container {
+  -moz-border-radius: 0px !important;
+}
+
+/*******PUTs EVERYTHING AS ONE LINE******/
+
+#list-view > #addon-list .addon.addon-view {
+  padding: 2px 12px 2px 7px !important;
+}
+
+#list-view .addon.addon-view * {
+  -moz-box-orient: horizontal !important;
+  -moz-box-align: center !important;
+  vertical-align: middle !important;
+  font-size: 100% !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  white-space: nowrap !important;
+}
+
+
+#list-view > #addon-list .icon-container,
+#list-view > #addon-list .icon {
+  height: 16px !important;
+  width: 16px !important;
+}
+
+#list-view > #addon-list :-moz-any(
+.icon-container,
+.name,
+.version,
+.disabled-postfix,
+.update-postfix,
+.date-updated,
+.description,
+.details.buttton-link,
+.relnotes-toggle),
+#list-view > #addon-list .relnotes-container > *,
+#list-view > #addon-list .status-container label {
+  margin-left: 5px !important;
+}
+
+/* remove message about incompatible addon */
+#list-view > #addon-list .warning {
+  display: none !important;
+}
+
+/* hide the message 'add-on compatibility checking is disabled....' */
+.global-warning-checkcompatibility, .global-warning-container image, .global-warning-container.global-warning, .view-header.global-warning-container {
+display: none !important; 
+}
+
+/* Hide Add-on Buttons */
+.control-container
+{ display: none !important; }
+
+/* Remove Show More Information Link */ 
+.description-container
+{ display: none !important; }
+
+/* Remove some Sidebar context menu options */
+menuitem[id="placesContext_open:newwindow"],
+menuitem[id="placesContext_openContainer:tabs"],
+menuitem[id="placesContext_sortBy:name"],
+menuitem[id="placesContext_sortBy:name"] + menuseparator {
+  display:none !important;
+}
+
+/* Firefox's addons update manager release notes drop down moved above release notes */
+.addon.addon-view .relnotes-container + hbox {-moz-box-ordinal-group: 2 !important;}
+.addon.addon-view .relnotes-container {-moz-box-ordinal-group: 3 !important;}
+
+/* AIOS addons update manager release notes drop down moved above release notes */
+.aios-container .relnotes-container + hbox {-moz-box-ordinal-group: 2 !important;}
+.aios-container .relnotes-container {-moz-box-ordinal-group: 3 !important;}
+
+/* Remove Addon Manager Items */
+#category-discover, #header-search, .description-container, .warning, .creator, #back-btn, #forward-btn {
+  display:none !important;}
+
+/* ===== Optional Options - Uncomment the code to use ===== */
+
+/* -- Optional - Remove new Stylish 1.1.2 links added to Add-ons Manager & All-in-One Sidebar-Stylish - Removes Go to userstyles.org link, Write New Style Link, Removes userstyle top container where the links were held at - Optional -- */
+
+/* #userstyles-note, #new-userstyle, #userstyle-top-container{
+display: none !important; } 
+*/ 
+
+/* -- Optional - Removes the header spacer in Add-ons Manager to Move the Box, Check for Updates & Search for all Add-ons Box to the left in Add-ons Manager and All-in-One Sidebar for a more convenient location, instead of it being to the far right. */
+
+/* 
+#header > spacer {display:none!important;} 
+*/
+
+ }

@@ -1,0 +1,38 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("dis.4chan.org") {
+
+    body {
+        background-color: #101010 !important;
+    }
+    
+    h2 {
+        color: #aaa !important;
+    }
+    
+    .spoiler {
+        background-color: #d0d0d0 !important;
+        color: #d0d0d0 !important;
+    }
+    
+    .spoiler:hover {
+        background-color: transparent !important;
+    }
+    
+    .prettyprint {
+        border: 0px transparent solid !important;
+    }
+    
+    .postername {
+        color: #960050 !important;
+    }
+    
+    .postertrip {
+        color: #7E40A5 !important;
+    }
+    
+    a:not([href="mailto:sage"]) {
+        text-decoration: none !important;
+    }
+
+}

@@ -1,0 +1,159 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("hackage.haskell.org") {
+    body {
+        background-color: #101010 !important;
+        color: #d0d0d0 !important; }
+    h1,
+    h2,
+    h3,
+    #content .caption {
+        color: #3399ff !important; }
+    
+    .src,
+    #table-of-contents {
+        background-color: #1f1f1f !important; }
+    
+    #table-of-contents a,
+    .module a,
+    #content a,
+    .content a,
+    .navigation a {
+        color: #3579a8 !important; }
+    
+    .content a:hover,
+    .navigation a:hover {
+        color: #3399ff !important;
+        background-color: transparent !important; }
+    
+    .show li:nth-child(odd) {
+        background-color: #101010; }
+    
+    .show li:nth-child(even) {
+        background-color: #1f1f1f; }
+    
+    .src .link {
+        background-color: #101010 !important;
+        color: #707070 !important; }
+    
+    code a,
+    .src a {
+        font-family: terminus, monospace !important;
+        font-size: 8pt !important;
+        color: #3579a8 !important; }
+    
+    code,
+    pre {
+        font-family: terminus, monospace !important;
+        font-size: 8pt !important; }
+    
+    pre {
+        border: 1px solid rgba(255,255,255,0.1);
+        background-color: transparent !important; }
+    
+    #module-header .info {
+        background-color: #101010 !important;
+        color: #3399ff !important; }
+    
+    #synopsis ul {
+        background-color: #1f1f1f !important;
+        box-shadow: 0 0 5px #2d2d2d; }
+    
+    .decl,
+    .topdecl,
+    .arg {
+        background-color: #1f1f1f !important; }
+    
+    .navigation,
+    .toc,
+    .category {
+        background-color: #1f1f1f !important; }
+    
+    input {
+        background-color: #1f1f1f !important;
+        color: #d0d0d0 !important;
+        border: 1px solid #404040 !important; }
+    
+    .warning {
+        color: #960050 !important; }
+    
+}
+
+@-moz-document url-prefix("file://") {
+    body {
+        background-color: #101010 !important;
+        color: #d0d0d0 !important; }
+    h1,
+    h2,
+    h3,
+    #content .caption {
+        color: #3399ff !important; }
+    
+    .src,
+    #table-of-contents {
+        background-color: #1f1f1f !important; }
+    
+    #table-of-contents a,
+    .module a,
+    #content a,
+    .content a,
+    .navigation a {
+        color: #3579a8 !important; }
+    
+    .content a:hover,
+    .navigation a:hover {
+        color: #3399ff !important;
+        background-color: transparent !important; }
+    
+    .show li:nth-child(odd) {
+        background-color: #101010; }
+    
+    .show li:nth-child(even) {
+        background-color: #1f1f1f; }
+    
+    .src .link {
+        background-color: #101010 !important;
+        color: #707070 !important; }
+    
+    code a,
+    .src a {
+        font-family: terminus, monospace !important;
+        font-size: 8pt !important;
+        color: #3579a8 !important; }
+    
+    code,
+    pre {
+        font-family: terminus, monospace !important;
+        font-size: 8pt !important; }
+    
+    pre {
+        border: 1px solid rgba(255,255,255,0.1);
+        background-color: transparent !important; }
+    
+    #module-header .info {
+        background-color: #101010 !important;
+        color: #3399ff !important; }
+    
+    #synopsis ul {
+        background-color: #1f1f1f !important;
+        box-shadow: 0 0 5px #2d2d2d; }
+    
+    .decl,
+    .topdecl,
+    .arg {
+        background-color: #1f1f1f !important; }
+    
+    .navigation,
+    .toc,
+    .category {
+        background-color: #1f1f1f !important; }
+    
+    input {
+        background-color: #1f1f1f !important;
+        color: #d0d0d0 !important;
+        border: 1px solid #404040 !important; }
+    
+    .warning {
+        color: #960050 !important; }
+
+}

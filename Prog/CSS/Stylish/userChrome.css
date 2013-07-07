@@ -1,0 +1,109 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+scrollbar {
+    visibility: collapse !important }
+
+#nav-bar {
+    display: none !important;
+    height: 0px !important }
+
+#liberator-commandline-command,
+#liberator-statusline,
+#liberator-bottombar,
+#status-bar,
+#liberator-status,
+#liberator-message,
+#liberator-mode,
+#liberator-commandline,
+#liberator-commandline *,
+#liberator-commandline-command {
+    color: #d0d0d0;
+    background: #101010;
+    font-family: terminus !important;
+    font-size: 8pt; }
+
+#liberator-separator {
+    border-top: 0px solid transparent !important; }
+
+tabs {
+    font-size: 8pt !important }
+
+#appmenu-toolbar-button {
+    font-size: 0px }
+
+richlistitem.addon .content-container {
+    font-size: 12px !important }
+
+#navigator-toolbox toolbar,
+.tabbrowser-tab:not([selected="true"]) {
+    background:transparent!important;
+    color: #ccc!important; }
+
+.tabbrowser-tab {
+    text-align:center!important;
+    margin: -3px 0 0 !important;
+    padding: 0 6px !important;
+    border:none!important;
+    background: rgba(137,137,137,0.3)!important;
+    color: #eee !important; }
+
+#urlbar {
+    background:transparent!important;
+    text-align:center!important;
+    margin: -3px -9px 0 0 !important;
+    border:none!important }
+
+#statusbar-display {
+    display: none !important; }
+
+.tabbrowser-tab[fadein]:not([pinned]) {
+    min-width: 0px !important;
+    max-width: 950px !important; }
+
+#main-window:not([disablechrome]) #navigator-toolbox[tabsontop="true"] {
+    border: 0px !important; }
+
+.tabbrowser-arrowscrollbox > .scrollbutton-up,
+.tabbrowser-arrowscrollbox > .scrollbutton-down,
+toolbarbutton#appmenu-toolbar-button,
+toolbarbutton#alltabs-button,
+toolbarbutton#new-tab-button,
+.tabs-closebutton-box,
+.tab-close-button { 
+    display: none !important; }
+
+tabs#tabbrowser-tabs, tabs#tabbrowser-tabs * {
+    -moz-appearance: none !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    border: 0px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: none !important;
+    font-family: terminus !important;
+    font-size; 8pt }
+
+tabs#tabbrowser-tabs {
+    -moz-appearance: none !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    background: #101010 !important; }
+
+.tabbrowser-tab {
+    -moz-appearance: none !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    min-height: 18px !important;
+    color: #101010 !important;
+    background: #101010 !important; }
+
+.tabbrowser-tab[selected=true] {
+    -moz-appearance: none !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    background: #2d2d2d !important;
+    font-weight: bold !important;
+    color: #bb88dd !important; }
+
+.tabs-newtab-button {
+    display: none; }

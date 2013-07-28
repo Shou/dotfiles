@@ -69,6 +69,10 @@ alias yums="yum search"
 alias yumr="sudo yum remove"
 alias yumwp="sudo yum whatprovides"
 
+# Gentoo / Portage
+alias em="emerge"
+alias ems="emerge --search"
+
 # Not related to package management
 alias trans7="sleep .8s && transset-df -a"
 alias slist="sudo vim /etc/apt/sources.list"
@@ -89,6 +93,7 @@ alias fucking="sudo"
 alias FUCKING="sudo"
 alias goodnight="shutdown -h now"
 alias v="vim"
+alias grep="grep --color"
 
 # Use modern completion system
 autoload -Uz compinit

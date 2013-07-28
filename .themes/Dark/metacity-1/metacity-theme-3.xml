@@ -10,7 +10,7 @@
 
 <!-- meaningfull constants -->
 
-<constant name="C_border_focused" value="blend/#bb88dd/gtk:bg[NORMAL]/0.0" />
+<constant name="C_border_focused" value="blend/#ffc5a7/gtk:bg[NORMAL]/0.0" />
 <constant name="C_border_unfocused" value="blend/#2d2d2d/gtk:bg[NORMAL]/0.0" />
 <constant name="C_titlebar_focused_hilight" value="gtk:custom(wm_highlight,gtk:base[NORMAL])" />
 <constant name="C_titlebar_unfocused" value="blend/gtk:base[NORMAL]/gtk:bg[NORMAL]/0.4" />

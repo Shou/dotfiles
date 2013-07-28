@@ -123,6 +123,13 @@ def val_idletime():
         idletime_value = 0
     return idletime_value
 
+def is_away():
+    '''Check if user is already away'''
+    b = False
+    hdhata = w.hdata_get("irc_server")
+    #
+    return b
+
 def idle_chk(data, remaining_calls):
     ''' Inactivity check, when to change status to away '''
     global timer_hook

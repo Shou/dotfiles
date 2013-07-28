@@ -21,7 +21,7 @@ world-file: /home/hatate/.cabal/world
 -- program-prefix: 
 -- program-suffix: 
 -- library-vanilla: True
--- library-profiling: False
+library-profiling: True
 -- shared: False
 -- executable-dynamic: False
 -- executable-profiling: False

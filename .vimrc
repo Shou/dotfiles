@@ -41,6 +41,11 @@ set ls=2
 " Soft width column
 set cc=80
 
+" Rice
+set fillchars=vert:\│
+set fillchars=fold:\ 
+set fillchars=diff:\ 
+
 " Key map
 " Open a new tab with Ctrl+t
 nmap <C-t> :tabnew<CR>
@@ -112,5 +117,4 @@ let g:rbpt_colorpairs = [
 " Powerline
 
 let g:Powerline_symbols = 'fancy'
-
 

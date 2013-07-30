@@ -17,7 +17,7 @@ set autoindent
 " Syntax highlighting
 syntax on
 set t_Co=256
-color molokai
+color myon
 
 " highlight search results
 set hlsearch

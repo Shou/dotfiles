@@ -21,9 +21,9 @@
 
 /* default text style */
 stage {
-    font-family: cantarell, sans-serif;
-    font-size: 11pt;
-    color: white;
+    font-family: Cantarell, sans-serif;
+    font-size: 9pt;
+    color: #fcfcfc;
 }
 
 /* links */
@@ -38,8 +38,6 @@ stage {
 
 /* small */
 .app-well-menu,
-.contact-details-status,
-.run-dialog-label,
 .run-dialog-error-label {
     font-size: 9pt;
 }
@@ -431,7 +429,6 @@ StScrollBar StButton#vhandle:active {
     font-family: terminus;
     color: #fcfcfc;
     background-color: #101010;
-    font-weight: bold;
     height: 1.86em;
 }
 
@@ -2429,31 +2426,59 @@ StScrollBar StButton#vhandle:active {
     padding-bottom: 0px;
 }
 
-.hipster-ws {
-    font-family: droid sans mono;
-    color: #d0d0d0 !important;
-    padding: 0px 4px;
-}
-
-.hipster-ws-current {
-    color: #e78584 !important;
-}
-
-.hipster-ws-urgent {
-    color: #ff0090 !important;
-}
-
-.hipster-separator {
-    padding: 0px 4px;
-}
-
-.hipster-grid {
+.hipster-grid-cell {
     font-family: terminus;
+    font-size: 8px;
     color: #d0d0d0;
-    min-width: 200px;
-    min-height: 30px;
-    border: 1px solid #e78584;
-    top: 400px;
-    right: 800px;
+    min-width: 130px;
+    max-width: 130px;
+    min-height: 20px;
+    max-height: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #101010;
+    text-align: center;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+
+.hipster-grid-cell:hover {
+    border: 1px solid #e78584;
+}
+
+.cell0 { background-color: #101010; }
+.cell1 { background-color: #111111; }
+.cell2 { background-color: #121212; }
+.cell3 { background-color: #131313; }
+.cell4 { background-color: #141414; }
+.cell5 { background-color: #151515; }
+.cell6 { background-color: #161616; }
+.cell7 { background-color: #171717; }
+.cell8 { background-color: #181818; }
+.cell9 { background-color: #191919; }
+.cell10 { background-color: #1a1a1a; }
+.cell11 { background-color: #1b1b1b; }
+.cell12 { background-color: #1c1c1c; }
+.cell13 { background-color: #1d1d1d; }
+.cell14 { background-color: #1e1e1e; }
+.cell15 { background-color: #1f1f1f; }
+.cell16 { background-color: #202020; }
+.cell17 { background-color: #212121; }
+.cell18 { background-color: #222222; }
+.cell19 { background-color: #232323; }
+.cell20 { background-color: #242424; }
+.cell21 { background-color: #252525; }
+.cell22 { background-color: #262626; }
+.cell23 { background-color: #272727; }
+.cell24 { background-color: #282828; }
+.cell25 { background-color: #292929; }
+.cell26 { background-color: #2a2a2a; }
+.cell27 { background-color: #2b2b2b; }
+.cell28 { background-color: #2c2c2c; }
+.cell29 { background-color: #2d2d2d; }
+.cell30 { background-color: #2e2e2e; }
+.cell31 { background-color: #2f2f2f; }
+.cell32 { background-color: #303030; }
 

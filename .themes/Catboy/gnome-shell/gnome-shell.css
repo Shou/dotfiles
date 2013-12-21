@@ -21,9 +21,9 @@
 
 /* default text style */
 stage {
-    font-family: cantarell, sans-serif;
-    font-size: 11pt;
-    color: white;
+    font-family: Cantarell, sans-serif;
+    font-size: 9pt;
+    color: #fcfcfc;
 }
 
 /* links */
@@ -38,8 +38,6 @@ stage {
 
 /* small */
 .app-well-menu,
-.contact-details-status,
-.run-dialog-label,
 .run-dialog-error-label {
     font-size: 9pt;
 }
@@ -431,7 +429,6 @@ StScrollBar StButton#vhandle:active {
     font-family: terminus;
     color: #fcfcfc;
     background-color: #101010;
-    font-weight: bold;
     height: 1.86em;
 }
 
@@ -453,9 +450,11 @@ StScrollBar StButton#vhandle:active {
     color: #ffba68;
 }
 
-#panelLeft .panel-button:last-child {
-    padding: 0px;
-}
+#panelLeft
+    { padding: 0px
+    ; spacing: 0px
+    ; margin: 0px
+    }
 
 #panelRight:last-child * {
     color: #fcfcfc !important;

@@ -59,3 +59,5 @@ visualizer_output_name      = "my_fifo"
 visualizer_sync_interval    = "1"
 visualizer_type             = "wave" # wave or spectrum
 visualizer_in_stereo        = "no"
+
+mpd_host = "touhou@localhost"

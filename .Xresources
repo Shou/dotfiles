@@ -21,7 +21,7 @@ URxvt*boldFont:     xft:Terminus:pixelsize=8:antialias=false,xft:monospace:pixel
 
 URxvt.keysym.M-u:       perl:mark-yank-urls:activate_mark_mode
 URxvt.underlineURLs:    true
-URxvt.perl-lib:         /home/shou/.urxvt/
+URxvt.perl-lib:         /home/hatate/.urxvt/
 URxvt.perl-ext:         selection,mark-yank-urls
 URxvt.perl-ext-common:  default,matcher
 URxvt.urlLauncher:      /usr/bin/x-www-browser
@@ -54,7 +54,7 @@ URxvt.urlLauncher:      /usr/bin/x-www-browser
 
 ! black
 *color0:        #101010
-*color8:        #303030
+*color8:        #2d2d2d
 ! red
 *color1:        #960050
 *color9:        #ff0090

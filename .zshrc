@@ -56,6 +56,7 @@ alias aptbd="sudo apt-get build-dep"
 alias aptdl="apt-get download"
 alias aptpu="sudo apt-get purge"
 alias aptar="sudo apt-get autoremove"
+alias aptac="sudo apt-get autoclean"
 alias aptc="apt-cache"
 alias aptpf="sudo vim /etc/apt/preferences"
 alias aptppa="sudo apt-add-repository"
@@ -94,6 +95,10 @@ alias FUCKING="sudo"
 alias goodnight="shutdown -h now"
 alias v="vim"
 alias grep="grep --color"
+alias mkdir="mkdir -p"
+alias s="ssh"
+alias :q="exit"
+alias shoudo="sudo"
 
 # Use modern completion system
 autoload -Uz compinit

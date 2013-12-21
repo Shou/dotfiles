@@ -6,31 +6,28 @@
 hi StatusLine           color: #bb88dd !important; background: transparent;
 
 "CmdLine settings excluding Gradient
-hi Normal               color: #afafaf; background: #101010;
-hi CmdLine              background: #101010; color: #afafaf; font-size: 8pt;
+hi Normal               color: #afafaf; background: #101010; border: none !important;
+hi CmdLine              background: #101010; color: #afafaf; font-size: 8pt; border: none !important;
+hi CmdOutput            font-family: terminus; font-size: 8pt;
 hi CompDesc             width: 50%; font-size: 8pt; font-family: terminus;
 hi CompIcon             width: 16px; min-width: 16px; display: inline-block; margin-right: .5ex;
+hi CompItem             border: none !important;
 hi CompItem[selected]   background: #2d2d2d; color: #7e40a5;
 hi CompMsg              font-style: italic; margin-left: 16px;
 hi CompResult           width: 45%; max-width: 400px; overflow: hidden; font-size: 8pt; font-family: terminus; font-weight: normal;
-hi CompTitle            color: #ffba68; background: #1f1f1f; font-weight: bold;
-hi CompTitle>*          padding: 0 .5ex;
+hi CompTitle            color: #ffba68; background: #1f1f1f; font-weight: bold; border: none !important;
+hi CompTitle > *        padding: 0 .5ex; border: none !important;
 hi Filter               font-weight: bold; color: #80ff00;
-
-"When using tab complete in CmdLine, line separating Title from function and description
-"hi Gradient            height: 1px; margin-bottom: -1px; margin-top: -1px;
-"hi GradientLeft        background-color: #00bbff;
-"hi GradientRight       background-color: #222222;
 
 "Used with ]f and [f
 hi FrameIndicator       background-color: #222222; opacity: 0.5; z-index: 999; position: fixed; top: 0; bottom: 0; left: 0; right: 0;
 
 hi Bell                 border: 0 none; background-color: #222222;
-hi ErrorMsg             color: #ffffff; background: #a60344;
+hi ErrorMsg             color: #ff0090; text-shadow: 0 0 1px black;
 
 
 "Hint section
-hi Hint                 font-family: terminus; font-size: 8pt; color: #ffba68; background-color: rgba(16, 16, 16, 0.9); border: solid 1px #3579a8;
+hi Hint                 font-family: terminus; font-size: 8pt; color: #ffba68; background-color: rgba(16, 16, 16, 0.9); border: solid 1px #3579a8; border: none !important;
 hi Hint::after          content: attr(number);
 hi HintActive           background: #1f1f1f; color: #80ff00;
 hi HintElem             background-color: #222222; color: #f6e9e9;
@@ -54,9 +51,3 @@ hi URL:hover            text-decoration: underline; cursor: pointer;
 hi LineNr               color: #afafaf; background: #222222;
 hi Indicator            color: #7e40a5 !important;
 
-"style -name statusbar chrome://* <<EOM
-"#status-bar statusbarpanel { padding: 0 1px !important; }
-"statusbarpanel > * { margin: 0 !important; padding: 0 2px 0 0 !important; }
-"EOM
-
-"For other descriptions of each item, please see ``Styling'' section included with Vimperator

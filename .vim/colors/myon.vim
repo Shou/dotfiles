@@ -160,7 +160,7 @@ if &t_Co > 255
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=081
 
-   hi MatchParen      ctermfg=016 ctermbg=010
+   hi MatchParen      ctermfg=015 ctermbg=010
    hi ModeMsg         ctermfg=229
    hi MoreMsg         ctermfg=229
    hi Operator        ctermfg=014

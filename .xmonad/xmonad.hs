@@ -282,8 +282,8 @@ keys' conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
  
     -- Programs
     , ((controlMask .|. mod1Mask,   xK_c        ), spawnOn "2" "firefox")
-    , ((controlMask .|. mod1Mask,   xK_h        ), spawnHere "nautilus --no-desktop")
-    , ((controlMask .|. shiftMask,  xK_Escape   ), spawnHere "gnome-system-monitor")
+    , ((controlMask .|. mod1Mask,   xK_h        ), spawnOn "4" "pcmanfm")
+    , ((controlMask .|. shiftMask,  xK_Escape   ), spawnOn "5" "gnome-system-monitor")
  
     -- Screenshots
     , ((0,                          xK_Print    ), submap . M.fromList $
@@ -368,7 +368,7 @@ keys' conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
  
     -- quit, or restart
     , ((modMask .|. shiftMask,      xK_q        ), io (exitWith ExitSuccess))
-    , ((modMask,                    xK_q        ), spawnHere "/home/suwako/.xmonad/scripts/kill-taffybar && xmonad --recompile && xmonad --restart")
+    , ((modMask,                    xK_q        ), spawnHere "/home/hatate/.xmonad/scripts/kill-taffybar && xmonad --recompile && xmonad --restart")
     ]
     ++
     -- mod-[1..9] %! Switch to workspace N

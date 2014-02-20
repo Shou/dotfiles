@@ -99,6 +99,9 @@ alias mkdir="mkdir -p"
 alias s="ssh"
 alias :q="exit"
 alias shoudo="sudo"
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
 # Use modern completion system
 autoload -Uz compinit

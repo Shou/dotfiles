@@ -136,7 +136,7 @@ if &t_Co > 255
    hi Cursor          ctermfg=016  ctermbg=010
    hi Debug           ctermfg=003
    hi Define          ctermfg=081
-   hi Delimiter       ctermfg=016
+   hi Delimiter       ctermfg=004
 
    hi DiffAdd                     ctermbg=024
    hi DiffChange      ctermfg=181 ctermbg=239

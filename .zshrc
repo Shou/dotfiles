@@ -6,8 +6,8 @@ promptinit
 
 # PROMPT theme
 #PROMPT=" λ %{$fg[magenta]%}%n%{$reset_color%} %~ %{$fg[magenta]%}→%{$reset_color%} "
-PROMPT=" λ %{$fg[magenta]%}%~%{$reset_color%} → "
-PS2=" %{$fg[magenta]%}→%{$reset_color%} "
+PROMPT=" λ %{$fg_bold[blue]%}%~%{$reset_color%} → "
+PS2=" %{$fg_bold[blue]%}→%{$reset_color%} "
 
 setopt histignorealldups sharehistory
 
@@ -97,11 +97,15 @@ alias v="vim"
 alias grep="grep --color"
 alias mkdir="mkdir -p"
 alias s="ssh"
+alias sf="sshfs"
 alias :q="exit"
 alias shoudo="sudo"
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias l="ls"
+alias xo="xdg-open"
+alias open="xdg-open"
 
 # Use modern completion system
 autoload -Uz compinit

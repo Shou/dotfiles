@@ -1,34 +1,25 @@
 "3.7.1 (created: 2013/05/22 20:32:57)
 
-highlight Bell border: 0 none; background-color: #222222;
-highlight CmdLine background: #101010; color: #afafaf; font-size: 8pt;
-highlight CompDesc width: 50%; font-size: 8pt; font-family: terminus;
-highlight CompItem[selected] background: #2d2d2d; color: #66ccff;
-highlight CompResult width: 45%; max-width: 400px; overflow: hidden; font-size: 8pt; font-family: terminus; font-weight: normal;
-highlight CompTitle color: #ffc5a7; background: #1f1f1f; font-weight: bold;
-highlight CompTitle>* padding: 0 .5ex;
-highlight ErrorMsg color: #ffffff; background: #a60344;
-highlight Filter font-weight: bold; color: #ffc5a7;
-highlight FrameIndicator background-color: #222222; opacity: 0.5; z-index: 999; position: fixed; top: 0; bottom: 0; left: 0; right: 0;
-highlight Function color: lightgreen; background: #222222;
-highlight Hint font-family: terminus; font-size: 8pt; color: #ffba68; background-color: rgba(16, 16, 16, 0.9); border: solid 1px #3579a8;
-highlight HintActive background: #1f1f1f; color: #66ccff;
-highlight HintElem background-color: #222222; color: #f6e9e9;
-highlight Indicator color: #e78584 !important;
-highlight InfoMsg color: #afafaf;
-highlight LineNr color: #afafaf; background: #222222;
-highlight ModeMsg color: #ffba68 !important;
-highlight MoreMsg color: #afafaf; background: #222222;
-highlight NonText color: lightblue; min-height: 16px; padding-left: 2px;
-highlight Normal color: #afafaf; background: #101010;
-highlight Number color: tan; background: #222222
-highlight Question color: #ffffff; background: #222222; font-weight: bold;
-highlight StatusLine color: #66ccff !important; background: transparent;
-highlight String color: #222222; background: #afafaf;
-highlight Tag color: #222222; background: #afafaf;
-highlight Title color: #ffc5a7; font-family: terminus !important; font-size: 8pt !important;
-highlight URL text-decoration: none; color: lightblue; background: inherit;
-highlight WarningMsg color: #ffba68 !important;
+hi Hint font-family: "Chunkfive"; font-size: 12pt; color: #F90; text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+hi HintActive background: #1f1f1f; color: #66ccff;
+hi HintElem text-shadow: 0 0 2px white; color: #f6e9e9;
+hi CmdLine background: url("http://a.pomf.se/fwyypa.png") fixed; color: #1d1d1d;
+hi CmdLine>* font-family: "Asap"; font-size: 10pt;
+hi Normal background: url("http://a.pomf.se/mdlxyp.png") fixed; color: #1d1d1d;
+hi StatusLine color: #1d1d1d; font-family: "Asap"; font-size: 10pt;
+hi CompItem background: url("http://a.pomf.se/fwyypa.png") fixed; text-shadow: 0 0 1px white; font-family: "Junction"; font-size: 10pt;
+hi CompItem[selected] background: url("http://a.pomf.se/mdlxyp.png") fixed;
+hi CompTitle background: url("http://a.pomf.se/mdlxyp.png") fixed;
+hi CompTitle>* font-family: "Asap"; font-weight: bold; font-size: 12pt; padding-left: 5px; text-shadow: 0 0 1px white, 0 0 1px white; color: #2e2921;
+hi CompDesc color: #1d1d1d; text-shadow: 0 0 1px white; max-width: 40vw; width: 40vw; overflow: hidden;
+hi CompResult width: 40vw; max-width: 40vw; overflow: hidden; text-overflow: ellipsis;
+hi ErrorMsg background-color: #170505; color: #e0e0e0 !important; text-shadow: 0 0 1px black; font-family: "Junction"; font-size: 10pt;
+hi URL color: #1d1d1d; text-shadow: 0 0 1px white;
+hi Filter font-family: "Asap"; font-size: 12pt; color: #F90; text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+hi Indicator font-family: "Asap"; font-size: 12pt; color: #1d0a06; text-shadow: 0 0 1px white, 0 0 1px white;
+hi InfoMsg color: #000942;
+hi ModeMsg font-family: "Asap"; font-size: 12pt; color: #39C; text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white; margin-left: 5px;
+
 map V <Insert><C-a><Insert>
 noremap j 3j
 noremap k 3k
@@ -37,6 +28,6 @@ set complete=slhbf
 set defsearch=duckduckgo
 set "editor=urxvt -e vim"
 set hintchars=asdfghjkl:
-source! /home/shou/.vimperatorrc.local
+" source! /home/shou/.vimperatorrc.local
 
 " vim: set ft=vimperator:

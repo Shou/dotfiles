@@ -3,8 +3,5 @@ add Lock = Escape
 keysym Caps_Lock = Escape
 keysym Escape = Caps_Lock
 
-clear Mod4
-keysym Super_R = BackSpace
-
 keycode 47 = colon semicolon
-!keycode 20 = underscore minus
+

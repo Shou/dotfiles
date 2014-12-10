@@ -17,10 +17,14 @@ set autoindent
 " Syntax highlighting
 syntax on
 set t_Co=256
-color myon
+color hemisu
+set bg=light
 
 " highlight search results
 set hlsearch
+
+" file encodings to recognize
+set fileencodings=ucs-bom,utf-8,sjis,default,latin1
 
 " ignore case when searching
 " set ignorecase
@@ -117,4 +121,11 @@ let g:rbpt_colorpairs = [
 " Powerline
 
 let g:Powerline_symbols = 'fancy'
+
+" Neo
+" set rtp+=~/.vim/bundle/neobundle.vim/
+" call neobundle#begin()
+
+" Neo plugins
+" NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 

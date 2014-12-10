@@ -294,7 +294,9 @@ rs = {
     "#angry": "┌(；`～,)┐",
     "#didyoumean:": "04Did you mean: 12",
     "(tm)": "™",
-    "#kamina": "◥▶̸̱◀◤"
+    "#kamina": "◥▶̸̱◀◤",
+    "lol": "",
+    " lol": ""
 }
 
 brit = {

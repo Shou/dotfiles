@@ -31,6 +31,5 @@ else
     nitrogen --restore &
     #compton -cCGb -o 0.25 -r 12 &
     nm-applet &
-    NetworkManager &
-    exec ck-launch-session dbus-launch zsh -c "xmonad"
+    exec xmonad
 fi

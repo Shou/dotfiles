@@ -29,6 +29,17 @@ if [ -z $( echo $PATH | grep ".cabal/bin" ) ]; then
     export PATH="$PATH:$HOME/.cabal/bin";
 fi
 
+# Path for /opt/ binaries
+for d in /opt/*; do
+    if [ -d $d ]; then
+        for sd in $d/*; do
+            if [ -d $sd/bin ]; then
+                export PATH=$PATH:$sd/bin
+            fi
+        done
+    fi
+done
+
 # Editor
 EDITOR="vim"
 

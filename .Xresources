@@ -7,8 +7,13 @@ Xft.antialias:  1
 Xft.dpi:        96
 Xft.rgba:       rgb
 
-URxvt*font:         xft:Terminus:pixelsize=8:antialias=false,xft:monospace:pixelsize=8:antialias=true,xft:Tewi
-URxvt*boldFont:     xft:Terminus:pixelsize=8:antialias=false,xft:monospace:pixelsize=8:antialias=true,xft:Tewi
+! URxvt
+! URxvt*font:         xft:Terminus:pixelsize=8:antialias=false,xft:monospace:pixelsize=8:antialias=true,xft:Tewi
+! URxvt*boldFont:     xft:Terminus:pixelsize=8:antialias=false,xft:monospace:pixelsize=8:antialias=true,xft:Tewi
+URxvt*font:         xft:Droid Sans Mono:pixelsize=11
+URxvt*boldFont:     xft:Droid Sans Mono:pixelsize=11
+
+*iconFile:          /usr/share/icons/gnome/scalable/apps/utilities-terminal-symbolic.svg
 *termName:          rxvt-unicode
 *scrollBar:         false
 *matcher.button:    1
@@ -37,6 +42,14 @@ URxvt.urlLauncher:      /usr/bin/x-www-browser
 *keysym.Control-Page_Up:    \033[1;4A
 *keysym.Control-Page_Down:  \033[1;52
 
+! Emacs
+emacs*Background:           #101010
+emacs*Foreground:           #d0d0d0
+emacs*pointerColor:         #d0d0d0
+emacs*cursorColor:          #d0d0d0
+emacs*bitmapIcon:           on
+emacs*font:                 fixed
+
 *eightBitInput:     False
 *metaSendsEscape:   True
 *modifier:          alt
@@ -47,69 +60,70 @@ URxvt.urlLauncher:      /usr/bin/x-www-browser
 *shading:       0
 *inheritPixmap: False
 
-! Dark colorscheme
-*background:    #101010
-*foreground:    #fffafa
-*cursorColor:   #d0d0d0
-
-! black
-*color0:        #101010
-*color8:        #2d2d2d
-! red
-*color1:        #960050
-*color9:        #ff0090
-! green
-*color2:        #66aa11
-*color10:       #80ff00
-! yellow
-*color3:        #c47f2c
-*color11:       #ffba68
-! blue
-*color4:        #e78584
-*color12:       #ffc5a7
-! magenta
-*color5:        #7e40a5
-*color13:       #bb88dd
-! cyan
-*color6:        #3579a8
-*color14:       #66ccff
-! white
-*color7:        #9999aa
-*color15:       #d0d0d0
+!! Dark colorscheme
+!*background:    #101010
+!*foreground:    #fffafa
+!*cursorColor:   #d0d0d0
+!
+!! black
+!*color0:        #101010
+!*color8:        #303030
+!! red
+!*color1:        #960050
+!*color9:        #ff0090
+!! green
+!*color2:        #66aa11
+!*color10:       #80ff00
+!! yellow
+!*color3:        #c47f2c
+!*color11:       #ffba68
+!! blue
+!*color4:        #e78584
+!*color12:       #ffc5a7
+!! magenta
+!*color5:        #7e40a5
+!*color13:       #bb88dd
+!! cyan
+!*color6:        #3579a8
+!*color14:       #66ccff
+!! white
+!*color7:        #9999aa
+!*color15:       #d0d0d0
 
 ! Light colorscheme
-!*background:    #f8dccf
-!*foreground:    #fffafa
-!*cursorColor:   #fffafa
+*background:    #FEFEFE
+*foreground:    #2D2D2D
+*cursorColor:   #2D2D2D
 
 ! black dark/light
-!*color0: #222222
-!*color8: #444444
+*color0:        #2D2D2D
+*color8:        #3D3D3D
 
-!! red dark/light
-!*color1: #B10000
-!*color9: #CC0000
+! red dark/light
+*color1:        #D1000F
+*color9:        #FA0012
 
-!! green dark/light
-!*color2: #6CB100
-!*color10: #7CCC00
+! green dark/light
+*color2:        #8DCA00
+*color10:       #AAF300
 
-!! yellow dark/light
-!*color3: #B15C00
-!*color11: #CC6A00
+! yellow dark/light
+*color3:        #D78B00
+*color11:       #FFA500
 
-!! blue dark/light
-!*color4: #005577
-!*color12: #0075A3
+! blue dark/light
+*color4:        #0A398F
+*color12:       #114EBD
 
-!! magenta dark/light
-!*color5: #5600B1
-!*color13: #6300CC
+! magenta dark/light
+*color5:        #C20041
+*color13:       #E8004E
 
-!! cyan dark/light
-!*color6: #007177
-!*color14: #009199
+! cyan dark/light
+*color6:        #008577
+*color14:       #00B5A2
 
-!! white dark/light
-!*color7: #bbbbbb
-!*color15: #eeeeee
+! white dark/light
+*color7:        #E0E0E0
+*color15:       #FEFEFE
+

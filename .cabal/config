@@ -41,7 +41,7 @@ library-profiling: True
 -- constraint:
 -- preference:
 -- solver: choose
--- documentation: False
+documentation: True
 -- doc-index-file: $datadir/doc/index.html
 -- max-backjumps: 200
 -- reorder-goals: False

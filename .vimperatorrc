@@ -3,31 +3,72 @@
 hi Hint font-family: "Chunkfive"; font-size: 12pt; color: #F90; text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 hi HintActive background: #1f1f1f; color: #66ccff;
 hi HintElem text-shadow: 0 0 2px white; color: #f6e9e9;
-hi CmdLine background: url("http://a.pomf.se/fwyypa.png") fixed; color: #1d1d1d;
-hi CmdLine>* font-family: "Asap"; font-size: 10pt;
-hi Normal background: url("http://a.pomf.se/mdlxyp.png") fixed; color: #1d1d1d;
-hi StatusLine color: #1d1d1d; font-family: "Asap"; font-size: 10pt;
-hi CompItem background: url("http://a.pomf.se/fwyypa.png") fixed; text-shadow: 0 0 1px white; font-family: "Junction"; font-size: 10pt;
-hi CompItem[selected] background: url("http://a.pomf.se/mdlxyp.png") fixed;
-hi CompTitle background: url("http://a.pomf.se/mdlxyp.png") fixed;
-hi CompTitle>* font-family: "Asap"; font-weight: bold; font-size: 12pt; padding-left: 5px; text-shadow: 0 0 1px white, 0 0 1px white; color: #2e2921;
-hi CompDesc color: #1d1d1d; text-shadow: 0 0 1px white; max-width: 40vw; width: 40vw; overflow: hidden;
+hi CmdLine background-color: #f9f9f9; color: #2d2d2d;
+hi CmdLine>* font-family: "Open Sans"; font-size: 10pt;
+hi Normal background-color: #f9f9f9; color: #1d1d1d;
+hi StatusLine color: #2d2d2d; font-family: "Open Sans"; font-size: 10pt; border-top: 1px solid #f0f0f0;
+hi CompItem background-color: #f9f9f9; font-family: "Open Sans"; font-size: 10pt;
+hi CompItem[selected] background-color: #009688; color: #f9f9f9;
+hi CompTitle background-color: #f9f9f9;
+hi CompTitle>* font-family: "Open Sans"; font-weight: bold; font-size: 12pt; padding-left: 5px; text-shadow: 0 0 1px white, 0 0 1px white; color: #2e2921;
+hi CompDesc max-width: 40vw; width: 40vw; overflow: hidden;
 hi CompResult width: 40vw; max-width: 40vw; overflow: hidden; text-overflow: ellipsis;
 hi ErrorMsg background-color: #170505; color: #e0e0e0 !important; text-shadow: 0 0 1px black; font-family: "Junction"; font-size: 10pt;
-hi URL color: #1d1d1d; text-shadow: 0 0 1px white;
-hi Filter font-family: "Asap"; font-size: 12pt; color: #F90; text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
-hi Indicator font-family: "Asap"; font-size: 12pt; color: #1d0a06; text-shadow: 0 0 1px white, 0 0 1px white;
+hi URL color: #2d2d2d; text-shadow: 0 0 1px white;
+hi Filter font-family: "Open Sans"; font-size: 12pt; color: #F90; text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+hi Indicator font-family: "Open Sans"; font-size: 12pt; color: #1d0a06; text-shadow: 0 0 1px white, 0 0 1px white;
 hi InfoMsg color: #000942;
-hi ModeMsg font-family: "Asap"; font-size: 12pt; color: #39C; text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white; margin-left: 5px;
-
+hi ModeMsg font-family: "Open Sans"; font-size: 10pt; color: #39C; text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white; margin-left: 5px;
+hi ContentSeparator border: none;
 map V <Insert><C-a><Insert>
 noremap j 3j
 noremap k 3k
 noremap <C-t> :tabgroups
-set complete=slhbf
-set defsearch=duckduckgo
+set complete=lbS
+set defsearch=ddgoog
 set "editor=urxvt -e vim"
 set hintchars=asdfghjkl:
 " source! /home/shou/.vimperatorrc.local
+
+" Javascript to hide statusbar
+noremap <silent> <F8> :js toggle_bottombar()<CR>
+noremap : :js toggle_bottombar(true)<CR>:
+noremap o :js toggle_bottombar(true)<CR>o
+noremap O :js toggle_bottombar(true)<CR>O
+noremap t :js toggle_bottombar(true)<CR>t
+noremap T :js toggle_bottombar(true)<CR>T
+noremap / :js toggle_bottombar(true)<CR>/
+noremap w :js toggle_bottombar(true)<CR>w
+noremap W :js toggle_bottombar(true)<CR>W
+noremap b :js toggle_bottombar(true)<CR>b
+noremap y :js toggle_bottombar(true)<CR>y
+noremap i :js toggle_bottombar(true)<CR>i
+noremap <S-Esc> :js toggle_bottombar(true)<CR><S-Esc>
+noremap <Ins> :js toggle_bottombar(true)<CR><Ins>
+noremap <Esc> :js toggle_bottombar(false)<CR>
+cnoremap <CR> <CR>:js toggle_bottombar(false)<CR>
+cnoremap <Esc> <Esc>:js toggle_bottombar(false)<CR>
+
+:js << EOF
+function toggle_bottombar(b) {
+    var bb = document.querySelector("#liberator-bottombar")
+    if (!bb) return
+
+    if (b){
+        bb.style.height = ""
+        bb.style.overflow = ""
+
+    } else if (! b) {
+        bb.style.height = "0px"
+        bb.style.overflow = "hidden"
+
+    } else {
+        bb.style.height = (! bb.style.height) ? "0px" : ""
+        bb.style.overflow = bb.style.height ? "" : "hidden"
+    }
+}
+
+toggle_bottombar()
+EOF
 
 " vim: set ft=vimperator:

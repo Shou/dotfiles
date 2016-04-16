@@ -6,8 +6,8 @@ promptinit
 
 # PROMPT theme
 #PROMPT=" λ %{$fg[magenta]%}%n%{$reset_color%} %~ %{$fg[magenta]%}→%{$reset_color%} "
-PROMPT=" λ %{$fg_bold[blue]%}%~%{$reset_color%} → "
-PS2=" %{$fg_bold[blue]%}→%{$reset_color%} "
+PROMPT=" λ %{$fg_bold[red]%}%~%{$reset_color%} → "
+PS2=" %{$fg_bold[red]%}→%{$reset_color%} "
 
 setopt histignorealldups sharehistory
 
@@ -71,6 +71,7 @@ alias aptac="sudo apt-get autoclean"
 alias aptc="apt-cache"
 alias aptpf="sudo vim /etc/apt/preferences"
 alias aptppa="sudo apt-add-repository"
+alias aptppu="sudo ppa-purge"
 alias ppakey="sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys"
 
 # Fedora / RPM
@@ -92,6 +93,7 @@ alias nautilus="nautilus --no-desktop"
 alias la="ls -ah"
 alias ls="ls -h --color=auto"
 alias ll="ls -lh"
+alias lla="ls -lh"
 # If you want rm to move to the trash instead use this, otherwise remove the
 # line below and it will act like `rm' should
 alias rm="mv --target-directory=$HOME/.local/share/Trash/files/"
@@ -123,6 +125,10 @@ autoload -Uz compinit
 fpath=(~/.zsh-completion $fpath)
 compinit
 
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=245'
+bindkey '^ ' autosuggest-accept
+
 # Colors
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' auto-description 'specify: %d'
@@ -143,18 +149,9 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# Start X if you're logging in from tty1.
-if [ $(tty) = /dev/tty1 ]; then
-    exec startx
-fi
 
-# This launches tmux, a terminal multiplexer (look it up) that allows you to
-# split terminals and detach sessions and such. Good if you accidentally close
-# a terminal, just do `tmux attach -d -t` and press tab to see which tmux
-# sessions are not attached. Also, you might not want to nest tmux sessions
-# so if you're going to reattach one, exit the tmux you're in with Ctrl+D first.
 if [ "$SSH" = "1" ]; then
     tmux attach -d -t 0
 elif [ -z $TMUX ]; then
-    tmux
+        tmux
 fi

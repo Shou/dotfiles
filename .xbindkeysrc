@@ -1,0 +1,14 @@
+
+# Mouse fwd/back to media fwd/back
+
+"xvkbd -text "\[Alt\]\[Shift\]L""
+b:9
+
+"xvkbd -text "\[Alt\]\[Shift\]H""
+b:8
+
+"xvkbd -text "\[Alt\]\[Shift\]L""
+XF86AudioPrev
+
+"xvkbd -text "\[Alt\]\[Shift\]H""
+XF86AudioNext

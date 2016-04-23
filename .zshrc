@@ -6,7 +6,7 @@ promptinit
 
 # PROMPT theme
 #PROMPT=" λ %{$fg[magenta]%}%n%{$reset_color%} %~ %{$fg[magenta]%}→%{$reset_color%} "
-PROMPT=" λ %{$fg_bold[red]%}%~%{$reset_color%} → "
+PROMPT="%{%K{033}%F{white}%} 🖿 %{$reset_color%}%{%K{032}%} %~ %{$reset_color%} "
 PS2=" %{$fg_bold[red]%}→%{$reset_color%} "
 
 setopt histignorealldups sharehistory
@@ -24,21 +24,31 @@ bindkey -v
 #bindkey "^[[1;5D" backward-word
 #bindkey "^[[1;5C" forward-word
 
-# Path for Haskell's cabal installed software
-if [ -z $( echo $PATH | grep ".cabal/bin" ) ]; then
-    export PATH="$PATH:$HOME/.cabal/bin";
-fi
+# PATHS
+# XXX order matters here
 
 # Path for /opt/ binaries
 for d in /opt/*; do
     if [ -d $d ]; then
         for sd in $d/*; do
             if [ -d $sd/bin ]; then
-                export PATH=$PATH:$sd/bin
+                if [ -z $( echo $PATH | grep "$sd/bin" ) ]; then
+                    export PATH="$sd/bin:$PATH";
+                fi
             fi
         done
     fi
 done
+
+# Path for Haskell's Cabal installed software
+if [ -z $( echo $PATH | grep ".cabal/bin" ) ]; then
+    export PATH="$HOME/.cabal/bin:$PATH";
+fi
+
+# Path for Haskell's Stack installed software
+if [ -z $( echo $PATH | grep ".local/bin" ) ]; then
+    export PATH="$HOME/.local/bin:$PATH";
+fi
 
 # Editor
 EDITOR="vim"

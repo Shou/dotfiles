@@ -6,7 +6,7 @@ promptinit
 
 # PROMPT theme
 #PROMPT=" λ %{$fg[magenta]%}%n%{$reset_color%} %~ %{$fg[magenta]%}→%{$reset_color%} "
-PROMPT="%{%K{033}%F{white}%} 🖿 %{$reset_color%}%{%K{032}%} %~ %{$reset_color%} "
+PROMPT="%{%K{033}%F{white}%} 🖿 %{$reset_color%}%{%K{032}%F{white}%} %~ %{$reset_color%} "
 PS2=" %{$fg_bold[red]%}→%{$reset_color%} "
 
 setopt histignorealldups sharehistory

@@ -1,0 +1,38 @@
+
+window.ssd {
+}
+
+/* headebars */
+headerbar {
+    height: 0;
+    padding: 0;
+    border-radius: 1px;
+    font-size: 0;
+    border: none;
+}
+
+headerbar entry,
+headerbar spinbutton,
+headerbar button,
+headerbar separator {
+}
+
+/* titlebars */
+.default-decoration {
+    min-height: 0;
+    padding-top: 5px;
+    background-color: #fff8f8;
+    box-shadow: none;
+}
+
+.default-decoration .titlebutton {
+    min-height: 0px; /* tweak these two props to reduce button size */
+    min-width: 0px;
+    margin-top: -100px;
+    background-color: #DC143B;
+    color: transparent;
+}
+
+.default-decoration .titlebutton:active {
+    background-color: #E54161;
+}

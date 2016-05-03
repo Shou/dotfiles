@@ -6,7 +6,7 @@ promptinit
 
 # PROMPT theme
 #PROMPT=" λ %{$fg[magenta]%}%n%{$reset_color%} %~ %{$fg[magenta]%}→%{$reset_color%} "
-PROMPT="%{%K{033}%F{white}%} 🖿 %{$reset_color%}%{%K{032}%F{white}%} %~ %{$reset_color%} "
+PROMPT="%{%K{033}%F{white}%} 🖿 %{%f%k%}%{%K{032}%F{white}%} %~ %{%f%k%} "
 PS2=" %{$fg_bold[red]%}→%{$reset_color%} "
 
 setopt histignorealldups sharehistory
@@ -46,8 +46,13 @@ if [ -z $( echo $PATH | grep ".cabal/bin" ) ]; then
 fi
 
 # Path for Haskell's Stack installed software
-if [ -z $( echo $PATH | grep ".local/bin" ) ]; then
+if [ -z $( echo $PATH | grep "/.local/bin" ) ]; then
     export PATH="$HOME/.local/bin:$PATH";
+fi
+
+# Path for NIX
+if [ -z $( echo $PATH | grep "/.nix-profile/" ) ]; then
+    . $HOME/.nix-profile/etc/profile.d/nix.sh
 fi
 
 # Editor
@@ -84,6 +89,14 @@ alias aptppa="sudo apt-add-repository"
 alias aptppu="sudo ppa-purge"
 alias ppakey="sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys"
 
+# NIX
+alias nixi="nix-env -i"
+alias nixs="nix-env -qaP"
+alias nixsh="nix-env -qa --description"
+alias nixr="nix-env -e"
+alias nixud="nix-channel --update"
+alias nixug="nix-env -u"
+
 # Fedora / RPM
 alias yumi="sudo yum install"
 alias yumud="sudo yum update"
@@ -103,7 +116,7 @@ alias nautilus="nautilus --no-desktop"
 alias la="ls -ah"
 alias ls="ls -h --color=auto"
 alias ll="ls -lh"
-alias lla="ls -lh"
+alias lla="ls -lha"
 # If you want rm to move to the trash instead use this, otherwise remove the
 # line below and it will act like `rm' should
 alias rm="mv --target-directory=$HOME/.local/share/Trash/files/"

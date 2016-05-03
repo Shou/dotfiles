@@ -3,34 +3,32 @@
 set nocp
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged/')
 
-Plugin 'VundleVim/Vundle.vim'
+Plug 'vim-scripts/ZoomWin'
 
-Plugin 'kien/rainbow_parentheses.vim'
+Plug 'kien/rainbow_parentheses.vim'
 
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
-Plugin 'tpope/vim-fugitive.git'
+Plug 'tpope/vim-fugitive'
 
-" Plugin 'ajh17/VimCompletesMe'
-Plugin 'Shougo/neocomplete.vim'
+" Plug 'ajh17/VimCompletesMe'
+Plug 'Shougo/neocomplete.vim'
 
-Plugin 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript'
 " FIXME
-" Plugin 'bigfish/vim-js-context-coloring'
-" Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'marijnh/tern_for_vim'
+" Plug 'bigfish/vim-js-context-coloring', { 'do': 'npm install --update' }
+" Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'marijnh/tern_for_vim', { 'do': 'npm install --update' }
 
-Plugin 'Raimondi/delimitMate'
+Plug 'Raimondi/delimitMate'
 
-Plugin 'Twinside/vim-haskellConceal'
-" XXX requires: ghd-mod
-Plugin 'eagletmt/neco-ghc'
+Plug 'Twinside/vim-haskellConceal'
+Plug 'eagletmt/neco-ghc', { 'do': 'where ghc-mod' }
 
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 
 
